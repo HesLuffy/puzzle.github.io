@@ -70,6 +70,6 @@ function createPuzzle(canvas, tray, map, type, showCanvas, showTray, images, lev
 
 
 
-createPuzzle('#canvas', '#tray', orderMap1, cutouts1, '#canvas2', '#tray2', '../data/images/image5.jpg', "Level One");
-createPuzzle('#canvas2', '#tray2', orderMap2, cutouts2, '#canvas3', '#tray3', '../data/images/image1.jpg', "Level Two");
-createPuzzle('#canvas3', '#tray3', orderMap3, cutouts3, undefined, undefined, '../data/images/image2.jpg', "Level Three", true);
+createPuzzle('#canvas', '#tray', orderMap1, cutouts1, '#canvas2', '#tray2', '/images/image5.jpg', "Level One");
+createPuzzle('#canvas2', '#tray2', orderMap2, cutouts2, '#canvas3', '#tray3', '/images/image1.jpg', "Level Two");
+createPuzzle('#canvas3', '#tray3', orderMap3, cutouts3, undefined, undefined, '/images/image2.jpg', "Level Three", true);
