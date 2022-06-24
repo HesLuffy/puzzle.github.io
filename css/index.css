@@ -1,0 +1,97 @@
+.contentBlock {
+    max-width: 800px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.contentBlock h1 {
+    text-align: center;
+}
+
+
+#canvas2, #tray2 {
+    height: 0;
+    overflow: hidden;
+}
+
+#canvas3, #tray3 {
+    height: 0;
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+}
+
+canvas {
+    object-fit: contain;
+}
+
+.content {
+    position: relative;
+}
+
+.pop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -62.5px;
+    margin-top: -25px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px;
+    transition: all 1.1s;
+    z-index: 3;
+    color: white;
+    display: none;
+}
+
+.pop.active {
+    animation: popAnimation 2s;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(30px);
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    z-index: 2;
+    display: none;
+}
+
+.stage-clear {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: popAnimation 2s;
+    display: none;
+    z-index: 4;
+    cursor: pointer;
+    padding: 12px;
+    margin-left: -62.5px;
+    margin-top: -25px;
+    font-size: 20px;
+}
+
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
